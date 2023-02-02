@@ -6,7 +6,7 @@ export function AboutMe() {
     <div>
       <br />
       <br />
-      <h3>About Me</h3>
+      <h2>About Me</h2>
       <Typography>
         <h4>
           <span>I'm</span> <span className="myname">Jeevareha R 👋🏻</span>

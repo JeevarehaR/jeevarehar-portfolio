@@ -14,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export function Skills({ data }) {
   return (
     <div className="skills-cont" style={{ marginBottom: "50px" }}>
-      <h3>Skills</h3>
+      <h2>Skills</h2>
 
       <Box
         sx={{

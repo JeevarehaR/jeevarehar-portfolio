@@ -21,7 +21,7 @@ const projects = [
 export function ProjectsCard() {
   return (
     <div className="projects-card" style={{ marginBottom: "40px" }}>
-      <h3>Projects</h3>
+      <h2>Projects</h2>
       <br />
 
       {projects.map((proj) => (
