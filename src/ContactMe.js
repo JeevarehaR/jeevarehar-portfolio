@@ -15,19 +15,6 @@ export function ContactMe() {
   return (
     <div className="contacts" style={{ margin: "30px 0" }}>
       <h2>Contact Me</h2>
-      <Box
-        sx={{
-          alignContent: "center",
-          display: "flex",
-          justifyContent: "space-around",
-          width: "400px",
-          margin: "auto",
-        }}
-      >
-        <span>+91 9025574760</span>
-        <span> </span>
-        <span>jeev.reh@gmail.com</span>
-      </Box>
 
       <Box
         sx={{
@@ -37,6 +24,13 @@ export function ContactMe() {
         }}
       >
         <BottomNavigation>
+          <Link href="#" color="inherit" sx={{ padding: 1 }}>
+            {<PhoneIcon />}
+          </Link>
+          <div style={{ padding: 1, margin: "10px 15px 0 0" }}>
+            +91 9025574760
+          </div>
+
           <Link
             href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtMqjRjdQrmbQkLvCJLfswXKszsQSRtdDDtKLDbNgKLNKpDwNrTZCsnqdVXmWPZclqDNrvwG"
             target="_blank"
@@ -46,6 +40,9 @@ export function ContactMe() {
           >
             {<MailIcon />}
           </Link>
+          <span style={{ padding: 1, margin: "8px 15px 0 0" }}>
+            jeev.reh@gmail.com
+          </span>
           <Link
             href="https://github.com/JeevarehaR"
             target="_blank"

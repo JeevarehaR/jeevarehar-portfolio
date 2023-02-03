@@ -9,14 +9,13 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import data from "./data.json";
 import { Button } from "@mui/material";
-import { Breads } from "./Breads";
 import { AboutMe } from "./AboutMe";
 import { Skills } from "./Skills";
 import { ProjectsCard } from "./ProjectsCard";
 import { ContactMe } from "./ContactMe";
 
-function App() {
-  const [mode, setMode] = useState("light");
+export function App() {
+  const [mode, setMode] = useState("dark");
 
   const theme = createTheme({
     palette: {
@@ -29,7 +28,6 @@ function App() {
       <Paper style={{ borderRadius: 0, minHeight: "100vh" }} elevation={0}>
         <div className="App">
           <Toolbar sx={{ float: "right" }}>
-            <Breads />
             <Button
               sx={{
                 marginLeft: 2,
