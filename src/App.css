@@ -19,14 +19,6 @@ h2{
   text-decoration: underline;
 }
 
-.info a{
-  text-decoration: none;
-  color:rgb(94, 8, 25);
-}
-
-.info a:hover {
-  text-decoration: underline;
-}
 
 Link{
       color: rgba(0, 0, 0, 0.6);
