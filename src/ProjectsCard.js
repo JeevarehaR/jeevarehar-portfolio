@@ -30,19 +30,18 @@ export function ProjectsCard() {
   return (
     <div>
       <h2>Projects</h2>
+      <br />
       <div
         className="projects-card"
         style={{
-          margin: "40px 0",
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-evenly",
+          justifyContent: "space-around",
+          flexWrap: "wrap",
         }}
       >
-        <br />
-
         {projects.map((proj) => (
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345, margin: "20px" }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -72,6 +71,7 @@ export function ProjectsCard() {
           </Card>
         ))}
       </div>
+      <br />
     </div>
   );
 }

@@ -18,7 +18,6 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import Slide from "@mui/material/Slide";
 
 export function App() {
   const [mode, setMode] = useState("dark");
@@ -57,9 +56,10 @@ export function App() {
             <Dialog
               open={open}
               onClose={handleClose}
+              color="inherit"
               aria-describedby="alert-dialog-slide-description"
             >
-              <DialogTitle sx={{ color: " #555A8f", fontWeight: "bold" }}>
+              <DialogTitle sx={{ fontWeight: "bold" }}>
                 B.Tech/Information Technology
               </DialogTitle>
               <DialogContent>
@@ -72,8 +72,8 @@ export function App() {
                 </DialogContentText>
               </DialogContent>
               <DialogActions>
-                <Button color="secondary" onClick={handleClose}>
-                  Pop
+                <Button sx={{ textTransform: "none" }} onClick={handleClose}>
+                  Close
                 </Button>
               </DialogActions>
             </Dialog>

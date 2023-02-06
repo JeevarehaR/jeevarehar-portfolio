@@ -1,6 +1,5 @@
 import { React } from "react";
 import Box from "@mui/material/Box";
-
 import BottomNavigation from "@mui/material/BottomNavigation";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -10,10 +9,12 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { Link } from "@mui/material";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 export function ContactMe() {
   return (
-    <div className="contacts" style={{ margin: "30px 0" }}>
+    <div className="contacts" style={{ alignContent: "center" }}>
       <h2>Contact Me</h2>
 
       <Box
@@ -21,15 +22,15 @@ export function ContactMe() {
           alignContent: "center",
           display: "flex",
           justifyContent: "space-evenly",
+          flexWrap: "wrap",
         }}
       >
         <BottomNavigation>
-          <Link href="#" color="inherit" sx={{ padding: 1 }}>
-            {<PhoneIcon />}
+          <Link color="inherit" sx={{ padding: 1 }}>
+            <Popup trigger={<PhoneIcon />} on={["hover"]} position="top center">
+              <div style={{ color: "black" }}>+91 9025574760</div>
+            </Popup>
           </Link>
-          <div style={{ padding: 1, margin: "10px 15px 0 0" }}>
-            +91 9025574760
-          </div>
 
           <Link
             href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtMqjRjdQrmbQkLvCJLfswXKszsQSRtdDDtKLDbNgKLNKpDwNrTZCsnqdVXmWPZclqDNrvwG"
@@ -38,11 +39,11 @@ export function ContactMe() {
             color="inherit"
             sx={{ padding: 1 }}
           >
-            {<MailIcon />}
+            <Popup trigger={<MailIcon />} on={["hover"]} position="top center">
+              <div style={{ color: "black" }}>jeev.reh@gmail.com</div>
+            </Popup>
           </Link>
-          <span style={{ padding: 1, margin: "8px 15px 0 0" }}>
-            jeev.reh@gmail.com
-          </span>
+
           <Link
             href="https://github.com/JeevarehaR"
             target="_blank"
@@ -50,7 +51,13 @@ export function ContactMe() {
             color="inherit"
             sx={{ padding: 1 }}
           >
-            {<GitHubIcon />}
+            <Popup
+              trigger={<GitHubIcon />}
+              on={["hover"]}
+              position="top center"
+            >
+              <div style={{ color: "black" }}>github.com/JeevarehaR</div>
+            </Popup>
           </Link>
           <Link
             href="https://goo.gl/maps/bNEA7KgbwZm7g4VW8"
@@ -59,7 +66,13 @@ export function ContactMe() {
             color="inherit"
             sx={{ padding: 1 }}
           >
-            {<LocationOnIcon />}
+            <Popup
+              trigger={<LocationOnIcon />}
+              on={["hover"]}
+              position="top center"
+            >
+              <div style={{ color: "black" }}>TamilNadu,India</div>
+            </Popup>
           </Link>
           <Link
             href="https://twitter.com/jvReyh"
@@ -68,7 +81,13 @@ export function ContactMe() {
             color="inherit"
             sx={{ padding: 1 }}
           >
-            {<TwitterIcon />}
+            <Popup
+              trigger={<TwitterIcon />}
+              on={["hover"]}
+              position="top center"
+            >
+              <div style={{ color: "black" }}>twitter.com/jvReyh</div>
+            </Popup>
           </Link>
           <Link
             href="https://www.linkedin.com/in/jeeva-reha-786790264/"
@@ -77,7 +96,13 @@ export function ContactMe() {
             color="inherit"
             sx={{ padding: 1 }}
           >
-            {<LinkedInIcon />}
+            <Popup
+              trigger={<LinkedInIcon />}
+              on={["hover"]}
+              position="top center"
+            >
+              <div style={{ color: "black" }}>linkedin.com/jeeva-reha-</div>
+            </Popup>
           </Link>
           <Link
             href="https://www.instagram.com/jvreyh/"
@@ -86,7 +111,13 @@ export function ContactMe() {
             color="inherit"
             sx={{ padding: 1 }}
           >
-            {<InstagramIcon />}
+            <Popup
+              trigger={<InstagramIcon />}
+              on={["hover"]}
+              position="top center"
+            >
+              <div style={{ color: "black" }}>instagram.com/jvReyh</div>
+            </Popup>
           </Link>
         </BottomNavigation>
       </Box>
