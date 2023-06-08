@@ -6,7 +6,6 @@ import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea, CardActions } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import moviesImg from "./movies app.png";
-import crmImg from "./crmImg.png";
 import { Link } from "@mui/material";
 
 const projects = [
@@ -16,13 +15,6 @@ const projects = [
     content:
       "Watch, Add, Delete and Edit movies of your own collection with this app.",
     link: "https://jeevr-movies.netlify.app/movies",
-  },
-  {
-    name: "CRM App",
-    image: crmImg,
-    content:
-      "Sign up,Login,Interact with the tutorial sessions and experience knowledge!",
-    link: "",
   },
 ];
 
@@ -64,7 +56,7 @@ export function ProjectsCard() {
                 href={proj.link}
                 sx={{ color: "#7b7e81", textDecoration: "none" }}
               >
-                Read more
+                Visit
               </Link>
               <ChevronRightIcon fontSize="inherit" />
             </CardActions>

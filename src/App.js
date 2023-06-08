@@ -64,11 +64,10 @@ export function App() {
               </DialogTitle>
               <DialogContent>
                 <DialogContentText id="alert-dialog-slide-description">
-                  I've done my Bachelors in Information Technology (2016 - 2020)
-                  in VCET, Madurai. While, HSC and SSLC in NAMMHSS, Ramnad.
-                  After graduation, I self-trained myself and got an Udemy
-                  Certificate as well I completed Full (MERN) Stack Development
-                  Course from GUVI in 2022.
+                  I've done my Bachelors in Information Technology in VCET (2016
+                  - 2020), HSC(2016) and SSLC(2014) in NAMMHSS. In 2021, I
+                  prepared for GATE. In 2022, I've done web development courses
+                  online in Udemy and GUVI.
                 </DialogContentText>
               </DialogContent>
               <DialogActions>
