@@ -34,5 +34,29 @@
     {
         "skill": "JavaScript",
         "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+        "skill": "Python",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+    },
+    {
+        "skill": "PHP",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"
+    },
+    {
+        "skill": "TypeScript",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+    },
+    {
+        "skill": "MySQL",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+    },
+    {
+        "skill": "C#",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+    },
+    {
+        "skill": ".NET",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-plain.svg"
     }
 ]
